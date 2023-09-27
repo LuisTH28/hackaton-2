@@ -1,70 +1,87 @@
-/* Reglas de reseteo
- alternativa:
-
-* {
-    margin: 0;
-}
-
-*/
 
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.hero{
-    background-image: url("/img/hero-1.jpg");
+.contenedor{
+    color: blue;
+    background-image: url("/img/contenedor.jpg");
     background-position: center;
     background-size: cover;
-    height: 350px;
+    /* height: 80vw; */
+    height: clamp(200px,100vw, 100vh);
     position: relative;
 }
 
-.hero-title{
+.contenedor-titulo{
     position: absolute;
     top: 0;
     right: 0;
     color: white;
-    font-size: 36px;
+    font-size: 30px;
     margin-right: 20px;
 }
 
-.hero-text{
+.contenedor-saludo{
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #729afe83;
+    font-size: 20px;
+    background-color: #7299FE80;
     padding: 10px;
     color: white;
     margin-left: 20px;
 }
 
-/* Para el elemento <progress> */
-progress {
-    appearance: none;
-    width: 100%;
-}
-progress::-webkit-progress-bar {
-    border-radius: 10cm;
-    background: rgb(217, 217, 217);
-}
-progress::-webkit-progress-value{
-    border-radius: 10cm;
-    background: #57EFF9;
-}
-
-.login img{
-    width: 100px;
-}
-
 .sobremi{
-    height: clamp(200px, 100px, 100vh);
+    height: clamp(200px, 100vw, 100vh);
     background-color: #7299FE;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sobremi-titulo{
+    color: #1D06A7;
+    text-align: center;  
+}
+
+.sobremi-contenido{
+    margin-right: 50px;
+    margin-left: 50px;
+    text-align: justify;
+}
+
+.sobremi-vercv{
+    font-size: 20px;
+    width: 20%;
+    height: 5%;
+    align-items: center;
+    color: white;
+    background-color: #D16FFF;
 }
 
 .skills{
+    height: clam(200px, 100vw, 100vh);
     background-color:#9022FF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.wrapper-mis-skills div{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.wrapper-mis-skills section{
+    margin-bottom: 20px;
+}
+
+progress{
+    appearance: none;
+    width: 100%;
 }
 
 .wrapper-mis-skills{
@@ -72,18 +89,23 @@ progress::-webkit-progress-value{
     grid-template-columns: 1fr 1fr;
     justify-items: stretch;
     gap: 30px;
-    padding: 8%;
-    color: white;
-}
-
-.wrapper-mis-skills section{
-    margin-bottom: 20px;
+    padding: 10%;
 }
 
 .skills-titulo{
     color: #26CC4B;
     text-align: center;
+    font-size: 60px;
+}
 
+progress::-webkit-progress-bar{
+    border-radius: 10em;
+    background: rgb(217, 217, 217);
+}
+
+progress::-webkit-progress-value{
+    border-radius: 10em;
+    background: #57EFF9;
 }
 
 .portafolio{
@@ -93,9 +115,11 @@ progress::-webkit-progress-value{
     justify-content: center;
     flex-direction: column;
 }
+
 .portafolio-titulo{
     color: #00AD84;
     text-align: center;
+    font-size: 60px;
 }
 
 .wrapper-portafolio{
@@ -108,5 +132,66 @@ progress::-webkit-progress-value{
 .portafolio img{
     width: 80%;
     margin-bottom: 30px;
-    border: 3px solid white;
+    border: 2px solid white;
+}
+
+.clientes img{
+    width: 100px;
+    padding: 30px;
+}
+
+.clientes{
+    height: clamp(200px, 100vw, 100vh);
+    background-color: #3F4E62;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.clientes-titulo{
+    color: #ADFF28;
+    text-align: center;
+    font-size: 60px;
+}
+
+.wrapper-clientes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    margin-bottom: 20px;
+}
+
+.contacto{
+    height: clamp(200px, 100vw, 100vh);
+    background-color: #1687A0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contacto-titulo{
+    color: #FF1B1B;
+    text-align: center;
+    font-size: 60px;
+}
+
+.wrapper-contacto form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    gap: 20px;
+    padding: 10%;  
+}
+
+.contacto input{
+    height: 50px;
+}
+
+.contacto-boton{
+    font-size: 20px;
+    width: 20%;
+    height: 5%;
+    align-self: center;
+    color: white;
+    background-color: #233451;
 }
