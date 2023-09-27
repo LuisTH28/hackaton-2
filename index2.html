@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrontEnd</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <!-- Bloque 1 Hero -->
-    <section>
-        <h1>FrontEnd</h1>
+    <section class="hero">
+        <h1 class="hero-title">FrontEnd</h1>
         <!-- Puede ser un h2 o div tambien -->
-        <p>Hola, mi nombre es Luis Torres</p>
+        <p class="hero-text">Hola, mi nombre<br> es Luis Torres</p>
     </section>
 
     <!-- Bloque 2 Sobre Mi -->
-    <section>
-        <h2>Sobre mi</h2>
+    <section class="sobremi">
+        <h2 >Sobre mi</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis libero, aliquid amet nostrum cumque repellat harum, eum non sed id eos nemo quas consequuntur magni obcaecati commodi magnam at ratione.
             Cum beatae dolore consequuntur natus perspiciatis ut inventore optio officia voluptatem molestias a quisquam veniam laboriosam consequatur illum quis autem, aspernatur enim excepturi quo nobis delectus libero. Laboriosam, similique minus.
@@ -24,21 +25,99 @@
             Delectus necessitatibus, ut officia incidunt rem exercitationem veritatis obcaecati quas repudiandae, assumenda sit dolor quisquam maiores nemo, libero architecto tempora mollitia. Similique harum aliquam ab eius distinctio quas asperiores sint.
             Dolores qui harum dolorum, vero, dignissimos blanditiis quidem sint quos consequatur iure quibusdam aliquid adipisci alias tempore, odit ipsam temporibus voluptate sunt? Ipsum minus numquam possimus hic. Culpa, excepturi ut.
         </p>
-        <button>Ver CV</button>
-        <input type="button" value="Ver CV"
+        <button class="boton-1">Ver CV</button>
+        <!-- <input type="button" value="Ver CV"> -->
     </section>
 
     <!-- Bloque 3 Mis Skills -->
-    <section></section>
+    <section class="skills">
+        <h2 class="skills-titulo">Mis Skills</h2>
+        <div class="wrapper-mis-skills">
+            <!-- Elemento 1 -->
+            <section>
+                <div>HTML</div>
+                <progress max="100" value="80"></progress>
+            </section>
+
+            <!-- Elemento 2 -->
+            <section>
+                <div>CSS</div>
+                <progress max="100" value="10"></progress>
+            </section>
+
+            <!-- Elemento 3-->
+            <section>
+                <div>Javascript</div>
+                <progress max="100" value="50"></progress>
+            </section>
+
+            <!-- Elemento 4 -->
+            <section>
+                <div>Vue</div>
+                <progress max="100" value="85"></progress>
+            </section>
+
+            <!-- Elemento 5-->
+            <section>
+                <div>Flexbox</div>
+                <progress max="100" value="90"></progress>
+            </section>
+
+            <!-- Elemento 6-->
+            <section>
+                <div>CSS Grid</div>
+                <progress max="100" value="40"></progress>
+            </section>
+        </div>
+    </section>
 
     <!-- Bloque 4 Portafolio -->
-    <section></section>
+    <section class="portafolio">
+        <h2 class="portafolio-titulo">Portafolio</h2>
+        <div class="wrapper-portafolio">
+    
+            <img src="/img/portafolio-1.jpg" alt="portafolio-1">
+    
+        
+            <img src="/img/portafolio-2.png" alt="portafolio-2">
+      
+            <img src="/img/portafolio-3.png" alt="portafolio-3">
+        
+            <img src="/img/portafolio-4.png" alt="portafolio-4">
+        
+            <img src="/img/portafolio-5.png" alt="portafolio-5">
+        
+            <img src="/img/portafolio-6.png" alt="portafolio-6">
+        
+            <img src="/img/portafolio-7.png" alt="portafolio-7">
+        
+            <img src="/img/portafolio-8.png" alt="portafolio-8">
+        </section>
+        
+        </div>
+    </section>
 
     <!-- Bloque 5 Clientes -->
-    <section></section>
+    <section>
+        <h2>Clientes</h2>
+        <div>
+            
+        </div>
+    </section>
 
     <!-- Bloque 6 Contacto -->
-    <section></section>
+    <section>
+        <h2>Contacto</h2>
+
+        <form>
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Apellido">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Telefono">
+            <textarea cols="30" rows="10" placeholder="Descripcion"></textarea>
+            <button>ENVIAR</button>
+        </form>
+    </section>
 
     
 </body>
